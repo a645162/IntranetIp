@@ -1,0 +1,10 @@
+services:
+  intranet_ip:
+    image: intranet_ip
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 15001:15001
+    network_mode: host
+    restart: always
