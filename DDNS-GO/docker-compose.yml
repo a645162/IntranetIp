@@ -1,0 +1,10 @@
+services:
+  # https://github.com/jeessy2/ddns-go
+  ddns:
+    image: jeessy/ddns-go
+    ports:
+      - 9876:9876
+#    network_mode: host
+    restart: always
+#    volumes:
+#      - /opt/ddns-go:/root
